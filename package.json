@@ -1,0 +1,53 @@
+{
+  "name": "sinopia",
+  "version": "0.6.5",
+  "description": "Private npm repository server",
+  "author": {
+    "name": "Alex Kocharin",
+    "email": "alex@kocharin.ru"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rlidwka/sinopia"
+  },
+  "main": "index.js",
+  "bin": {
+    "sinopia": "./bin/sinopia"
+  },
+  "dependencies": {
+    "express": ">= 3.4.7",
+    "commander": ">= 2.1.0",
+    "js-yaml": ">= 3.0.1",
+    "cookies": ">= 0.3.8",
+    "request": ">= 2.31.0",
+    "async": ">= 0.2.9",
+    "semver": ">= 2.2.1",
+    "minimatch": ">= 0.2.14",
+    "bunyan": ">= 0.22.1",
+    "fs-ext": ">= 0.3.2",
+    "mkdirp": ">= 0.3.5"
+  },
+  "devDependencies": {
+    "rimraf": ">= 2.2.5",
+    "mocha": ">= 1.17.0",
+    "eslint": "eslint/eslint"
+  },
+  "keywords": [
+    "private",
+    "package",
+    "repository",
+    "registry",
+    "modules",
+    "proxy",
+    "server"
+  ],
+  "scripts": {
+    "test": "mocha ./test/functional ./test/unit",
+    "lint": "eslint -c ./.eslint.yaml ./lib"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "preferGlobal": true,
+  "license": "WTFPL"
+}
